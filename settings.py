@@ -25,7 +25,7 @@ SECRET_KEY = '0(-tx=_av!m+mivi&au7$$3&+zomm3g8+_h^4upcp5=f(+pt75'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -142,3 +142,5 @@ MEDIA_URL = '/userUploads/'
 LOGIN_URL = 'login'
 LOGOUT_REDIRECT_URL = 'centralapp:mainpage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT =os.path.join(BASE_DIR, 'staticfiles')
